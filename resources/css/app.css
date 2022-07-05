@@ -1,0 +1,22 @@
+
+.main-body{    
+    width:100%;
+    height:auto;
+    background-color: pink;    
+}
+
+.orders{
+    border-radius:4px;
+    margin-left: 5px;
+    width:100%;
+    height:auto;
+    background-color: aqua;    
+}
+
+.messages{
+    border-radius:4px;
+    margin-left: 5px;
+    width:100%;
+    height:auto;
+    background-color: #80ff00;    
+}

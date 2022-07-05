@@ -1,23 +1,19 @@
 <template>
     <div>
-    <body-component></body-component>
+    <mainbody-component></mainbody-component>
     </div>
 </template>
 
 <script>
-import { Body } from './Body'
+import { MainBody } from './MainBody'
 
 export default ({
     components:{
-Body,
-    },
-
-    setup() {
-        
-    },
-})
+             MainBody,
+           }
+           })
 </script>
 
 <style>
-
+  @import '../../css/app.css';
 </style>

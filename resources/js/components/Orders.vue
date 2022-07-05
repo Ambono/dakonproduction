@@ -1,5 +1,5 @@
 <template>
-<div>
+<div class="orders">
     <h1>This is from orders component</h1>
     <div class="" v-for="orderitem in info" v-bind:key="orderitem.id">
         <span >{{ orderitem.id }}</span>
@@ -57,6 +57,3 @@ export default({
 })
 </script>
 
-<style>
-
-</style>
