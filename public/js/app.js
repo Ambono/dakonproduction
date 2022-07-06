@@ -5439,6 +5439,18 @@ var routes = [{
     return __webpack_require__.e(/*! import() */ "resources_js_components_pages_About_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../components/pages/About.vue */ "./resources/js/components/pages/About.vue"));
   },
   name: 'about'
+}, {
+  path: '/order',
+  component: function component() {
+    return __webpack_require__.e(/*! import() */ "resources_js_components_pages_Orders_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../components/pages/Orders.vue */ "./resources/js/components/pages/Orders.vue"));
+  },
+  name: 'order'
+}, {
+  path: '/message',
+  component: function component() {
+    return __webpack_require__.e(/*! import() */ "resources_js_components_pages_Messages_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../components/pages/Messages.vue */ "./resources/js/components/pages/Messages.vue"));
+  },
+  name: 'message'
 }];
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (routes);
 
@@ -10627,7 +10639,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.main-body{    \n    width:100%;\n    height:auto;\n    background-color: pink;    \n}\n\n.orders{\n    border-radius:4px;\n    margin-left: 5px;\n    width:100%;\n    height:auto;\n    background-color: aqua;    \n}\n\n.messages{\n    border-radius:4px;\n    margin-left: 5px;\n    width:100%;\n    height:auto;\n    background-color: #80ff00;    \n}\n\n.defaultcontainer{\n    border-radius:4px;\n    margin-left: 5px;\n    width:100%;\n    height:auto;\n    background-color: #0004ff;    \n}\n\n\n/*******************************  ids *****************/\n#nav{\n    color: wheat\n}\n\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.main-body{    \n    width:100%;\n    height:auto;\n    background-color: pink;    \n}\n\n.orders{\n    border-radius:4px;\n    margin-left: 5px;\n    width:100%;\n    height:auto;\n    background-color: aqua;    \n}\n\n.messages{\n    border-radius:4px;\n    margin-left: 5px;\n    width:100%;\n    height:auto;\n    background-color: #80ff00;    \n}\n\n.defaultcontainer{\n    border-radius:4px;\n    margin-left: 5px;\n    width:100%;\n    height:auto;\n    background-color: #0004ff;    \n}\n\n\n/*******************************  ids *****************/\n#nav{\n    color: navy\n}\n\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -45262,7 +45274,7 @@ module.exports = index_cjs;
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames not based on template
-/******/ 			if ({"resources_js_components_pages_Home_vue":1,"resources_js_components_pages_About_vue":1,"resources_js_components_navigations_TopNavbar_vue":1,"resources_js_components_MainBody_vue":1,"resources_js_components_pages_Messages_vue":1,"resources_js_components_pages_Orders_vue":1}[chunkId]) return "js/" + chunkId + ".js";
+/******/ 			if ({"resources_js_components_pages_Home_vue":1,"resources_js_components_pages_About_vue":1,"resources_js_components_pages_Orders_vue":1,"resources_js_components_pages_Messages_vue":1,"resources_js_components_navigations_TopNavbar_vue":1,"resources_js_components_MainBody_vue":1}[chunkId]) return "js/" + chunkId + ".js";
 /******/ 			// return url for filenames based on template
 /******/ 			return undefined;
 /******/ 		};
