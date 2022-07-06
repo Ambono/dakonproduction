@@ -1,19 +1,19 @@
-<template>
-    <div>
-    <mainbody-component></mainbody-component>
+<template lang="">
+    <div class="app">
+        <TopNavbar></TopNavbar>  
+        <MainBody></MainBody> 
+        <router-view></router-view>
     </div>
 </template>
-
 <script>
-import { MainBody } from './MainBody'
+import '../styles/app.scss';
+import '../../css/app.css';
 
-export default ({
-    components:{
-             MainBody,
-           }
-           })
+export default {
+    name: 'app',
+    components: {
+        TopNavbar: () => import('../components/navigations/TopNavbar'),
+        MainBody:() => import('../components/MainBody.vue')
+    }
+}
 </script>
-
-<style>
-  @import '../../css/app.css';
-</style>

@@ -7,24 +7,14 @@
         <span >{{ orderitem.quantite }}</span>
         <span >{{ orderitem.numeroDeCommande }}</span>
         <span >{{ orderitem.complete }}</span>
-    </div> 
-    <!-- <div id="app">
-     {{ info2 }} 
-
-     <div class="" v-for="upcomingtask in info" v-bind:key="upcomingtask.id">
-        <span >{{ upcomingtask.id }}</span>
-        <span >{{ upcomingtask.title }}</span>
-        <span >{{ upcomingtask.approved }}</span>
-        <span >{{ upcomingtask.taskId }}</span>
-    </div> 
-    </div> -->
+    </div>     
 </div>
-
 </template>
 
 <script>
 
-export default({
+export default{
+    name:'order',
     data() {
       return {        
         order:[],        
@@ -54,6 +44,6 @@ export default({
         //        .then(result => this.info = result.data)
         // }
     }
-})
+}
 </script>
 
