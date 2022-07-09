@@ -41,6 +41,25 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'topnavbar',
   data: function data() {
@@ -210,14 +229,22 @@ var render = function () {
   return _c("div", [
     _c("div", { attrs: { id: "nav" } }, [
       _c("div", { staticClass: "nav-menu" }, [
-        _c("i", {
-          staticClass: "fas fa-bars",
-          on: {
-            click: function ($event) {
-              return _vm.showMenu()
+        _c("i", { staticClass: "bi bi-chevron-double-down" }),
+        _vm._v(" "),
+        _c("div", { attrs: { id: "custom-hamburger-container" } }, [
+          _c(
+            "i",
+            {
+              staticClass: "bi bi-arrow-down-square",
+              on: {
+                click: function ($event) {
+                  return _vm.showMenu()
+                },
+              },
             },
-          },
-        }),
+            [_vm._m(0)]
+          ),
+        ]),
         _vm._v(" "),
         _c(
           "div",
@@ -273,7 +300,20 @@ var render = function () {
     ]),
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "top-icon" }, [
+      _c("span", { staticClass: "line line01" }),
+      _vm._v(" "),
+      _c("span", { staticClass: "line line02" }),
+      _vm._v(" "),
+      _c("span", { staticClass: "line line03" }),
+    ])
+  },
+]
 render._withStripped = true
 
 
