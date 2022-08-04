@@ -1,16 +1,12 @@
 <template>
-    <div class="main-body"><h1>this is main body</h1>
-      <Orders/>
-      <Messages/>
+    <div class="main-body">
+  <router-view></router-view>   
     </div>
 </template>
 <script>
 export default {
     name:'mainbody',
-    components:{
-        Messages:() => import('../components/pages/Messages.vue'),
-        Orders:() => import('../components/pages/Orders.vue')
-        //MainBody:() => import('./Components/MainBody.vue')
+    components:{        
     },
       mounted() {
             console.log('Body Component mounted.')

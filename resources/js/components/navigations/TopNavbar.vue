@@ -79,6 +79,7 @@ display: flex;
 justify-content: space-between;
 padding: 10px 30px;
 align-items: center;
+background-color: aqua;
 }
 .nav-items {
 display: flex;
@@ -94,11 +95,12 @@ padding: 0 10px;
 i {
 display: none;
 }
+
 // Mobile version - hidden hamburger menu
 @media screen and (max-width: 768px) {
 .nav-menu {
 padding-top: 10px;
-position: absolute;
+position: relative;
 width: 100%;
 }
 .open-menu {
