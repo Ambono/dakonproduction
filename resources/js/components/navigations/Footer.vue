@@ -27,11 +27,9 @@ showMenu() {
 this.showMobileMenu = !this.showMobileMenu;
 },
 },
-
 }
-
-
 </script>
+
 <style lang="scss" scoped>
 .foot-menu {
 background-color: white;

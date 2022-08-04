@@ -1,24 +1,9 @@
 <template>
-
-<div>
- 
+<div> 
   <div id="nav">
-
-<!------------------------------------------>
-
-<!---------------------------------------->
 <div class="nav-menu"> <!-- Menu container -->
-<i class="bi bi-chevron-double-down"></i>
-<!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-down" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-  <path fill-rule="evenodd" d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-</svg> -->
-
-
 <div id ="custom-hamburger-container">
-<i class="bi bi-arrow-down-square" @click="showMenu()"> <!--<div id="custom-hamburger"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-</svg></div> -->
+<i class="bi bi-arrow-down-square" @click="showMenu()">   
   <div class="top-icon">   
       <span class="line line01"></span>
       <span class="line line02"></span>
@@ -31,7 +16,7 @@
 class="nav-content"
 :class="this.showMobileMenu ? 'open-menu' : 'closed-menu'"
 > <!--  Menu content -->
-<div class="logo">Logo</div> <!--  Here can be a logo -->
+<div id="logo"><img :src="logo" width="360px" height="200px"/><p>Dakon production</p></div><!--  Here can be a logo -->
 <ul class="nav-items">
 <li><router-link to="/">Home</router-link> </li>
 <li><router-link to="/about">About</router-link></li>
@@ -48,15 +33,14 @@ class="nav-content"
 </template>
 
 <script>
-
+import logo from "../../../images/logo/dp_logo.png";
 export default{
    name:'topnavbar',
-
-
-
+ 
 data() {
 return {
 showMobileMenu: false,
+ logo: logo
 };
 },
 methods: {
@@ -67,9 +51,6 @@ this.showMobileMenu = !this.showMobileMenu;
 
 }
 </script>
-
-
-
 <style lang="scss" scoped>
 .nav-menu {
 background-color: white;
@@ -96,6 +77,21 @@ i {
 display: none;
 }
 
+#logo {
+   background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
+   position: relative;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   margin-left:0;   
+   overflow: hidden; 
+   color:lightgrey;
+   font-size:40px;
+   font-weight:300;
+   font-family:Verdana, Geneva, Tahoma, sans-serif;
+   opacity:0.5;   
+}
 // Mobile version - hidden hamburger menu
 @media screen and (max-width: 768px) {
 .nav-menu {
@@ -104,8 +100,8 @@ position: relative;
 width: 100%;
 }
 .open-menu {
-opacity: 1;
-height: 150px;
+opacity: 4;
+height: auto;
 }
 .closed-menu {
 opacity: 0;
