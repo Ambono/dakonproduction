@@ -5,9 +5,9 @@ class="foot-content"
 :class="this.showMobileMenu ? 'open-menu' : 'closed-menu'"
 > <!--  Menu content -->
 <ul class="foot-items">
-<li><router-link to="/about">About</router-link></li>
-<li><router-link to="/order">Feeback</router-link></li>
-<li><router-link to="/message">Help</router-link></li>
+<li><router-link to="/about">Contactez nous</router-link></li>
+<li><router-link to="/order">Vos opinions</router-link></li>
+<li><router-link to="/message">Aidez-moi</router-link></li>
 </ul>
 </div>
 </div>
