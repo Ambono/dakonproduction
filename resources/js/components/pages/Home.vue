@@ -1,27 +1,7 @@
-<!--<template>
-<div class="defaultcontainer">
-    <h1>This is from homes component</h1>
-   
-    
-</div>
-
-</template>
-
-<script>
-
-export default{
-   name:'home'
-}
-</script>
-
--->
-
-
-<template lang="">
-    <div  class="defaultcontainer">
-        {{ count }}
-        <h1>Home</h1>
+<template>
+    <div  class="default-container"> 
         <h1>This is from homes component</h1>
+        {{ count }}
         <button class="button" @click="$store.commit('INCREMENT')">INCREMENT </button>
     </div>
 </template>

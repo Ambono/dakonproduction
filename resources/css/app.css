@@ -1,32 +1,37 @@
-
+/*******************************  components *****************/
 .main-body{    
-    width:100%;
-    height:auto;
-    background-color: pink;    
+   /* width:100%;
+    height:100%;
+    background-color: pink; 
+    flex: 1;
+    padding: 0 25px ; /* top bottom 0, right left 25 */    
+  
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 30px;  
+  background-color: pink;
+  flex: 1 1 auto; 
 }
 
 .orders{
     border-radius:4px;
     margin-left: 5px;
     width:100%;
-    height:auto;
-    background-color: aqua;    
+    height:auto;      
 }
 
 .messages{
     border-radius:4px;
     margin-left: 5px;
     width:100%;
-    height:auto;
-    background-color: #80ff00;    
+    height:auto;      
 }
 
-.defaultcontainer{
-    border-radius:4px;
+.default-container{
     margin-left: 5px;
+    border-radius:4px;    
     width:100%;
-    height:auto;
-    background-color: #0004ff;    
+    height:auto;     
 }
 
 
@@ -34,4 +39,79 @@
 #nav{
     color: navy
 }
+
+/************ Hamburger menu **************************/
+#custom-hamburger-container{
+    width:10px;
+    height:10px;
+    align-content: center;
+    position: relative;
+       
+  }
+
+
+  #custom-hamburger{
+    background-color:magenta;
+    border-radius: 2px;
+    width:30px;
+    height:24px;
+    margin-bottom: 15px;
+    margin-top: 4px;
+    align-content: center;
+  }
+  
+
+  /********navbar icon hamburger https://stackoverflow.com/questions/49064813/vue-js-toggle-hamburger-menu-icons******/
+
+.top-icon {  
+    display: inline-block;
+    border-radius: 500px;
+    margin: 0px;
+    position: relative;
+    padding: 80px;
+    cursor: pointer;
+  }
+  
+  .main-item {
+    width: 80px;
+    height: 80px;
+    position: relative;
+  }
+  
+  .footer-items {
+    width: 80px;
+    height: 80px;
+    position: relative;
+  }
+  
+  .line {
+    position: absolute;
+    height: 4px;
+    width: 30%;
+    background: magenta;
+    border-radius: 10px;
+    transition: all cubic-bezier(0.25, 0.1, 0.28, 1.54) 0.32s;
+  }
+  
+  .line01 {
+    top: -10%;
+  }
+  
+  .line02 {
+    top: -5%;
+  }
+  
+  .line03 {
+    top: 0%;
+  }
+  
+  .menu.close .line01 {
+    transform: rotate(45deg);
+    top: 49%;
+  }
+  
+  .menu.close .line02, .menu.close .line03 {
+    transform: rotate(-45deg);
+    top: 49%;
+  }
 

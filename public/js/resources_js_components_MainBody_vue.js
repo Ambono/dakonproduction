@@ -16,18 +16,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'mainbody',
-  components: {
-    Messages: function Messages() {
-      return __webpack_require__.e(/*! import() */ "resources_js_components_pages_Messages_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../components/pages/Messages.vue */ "./resources/js/components/pages/Messages.vue"));
-    },
-    Orders: function Orders() {
-      return __webpack_require__.e(/*! import() */ "resources_js_components_pages_Orders_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../components/pages/Orders.vue */ "./resources/js/components/pages/Orders.vue"));
-    } //MainBody:() => import('./Components/MainBody.vue')
-
-  },
+  components: {},
   mounted: function mounted() {
     console.log('Body Component mounted.');
   }
@@ -119,18 +110,7 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    { staticClass: "main-body" },
-    [
-      _c("h1", [_vm._v("this is main body")]),
-      _vm._v(" "),
-      _c("Orders"),
-      _vm._v(" "),
-      _c("Messages"),
-    ],
-    1
-  )
+  return _c("div", { staticClass: "main-body" }, [_c("router-view")], 1)
 }
 var staticRenderFns = []
 render._withStripped = true

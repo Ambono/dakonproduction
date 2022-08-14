@@ -5387,6 +5387,9 @@ __webpack_require__.r(__webpack_exports__);
     },
     MainBody: function MainBody() {
       return __webpack_require__.e(/*! import() */ "resources_js_components_MainBody_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../components/MainBody.vue */ "./resources/js/components/MainBody.vue"));
+    },
+    Footer: function Footer() {
+      return __webpack_require__.e(/*! import() */ "resources_js_components_navigations_Footer_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../components/navigations/Footer.vue */ "./resources/js/components/navigations/Footer.vue"));
     }
   }
 });
@@ -10639,7 +10642,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.main-body{    \n    width:100%;\n    height:auto;\n    background-color: pink;    \n}\n\n.orders{\n    border-radius:4px;\n    margin-left: 5px;\n    width:100%;\n    height:auto;\n    background-color: aqua;    \n}\n\n.messages{\n    border-radius:4px;\n    margin-left: 5px;\n    width:100%;\n    height:auto;\n    background-color: #80ff00;    \n}\n\n.defaultcontainer{\n    border-radius:4px;\n    margin-left: 5px;\n    width:100%;\n    height:auto;\n    background-color: #0004ff;    \n}\n\n\n/*******************************  ids *****************/\n#nav{\n    color: navy\n}\n\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "/*******************************  components *****************/\n.main-body{    \n   /* width:100%;\n    height:100%;\n    background-color: pink; \n    flex: 1;\n    padding: 0 25px ; /* top bottom 0, right left 25 */    \n  \n  display: flex;\n  justify-content: space-between;\n  padding: 10px 30px;  \n  background-color: pink;\n  flex: 1 1 auto; \n}\n\n.orders{\n    border-radius:4px;\n    margin-left: 5px;\n    width:100%;\n    height:auto;      \n}\n\n.messages{\n    border-radius:4px;\n    margin-left: 5px;\n    width:100%;\n    height:auto;      \n}\n\n.default-container{\n    margin-left: 5px;\n    border-radius:4px;    \n    width:100%;\n    height:auto;     \n}\n\n\n/*******************************  ids *****************/\n#nav{\n    color: navy\n}\n\n/************ Hamburger menu **************************/\n#custom-hamburger-container{\n    width:10px;\n    height:10px;\n    align-content: center;\n    position: relative;\n       \n  }\n\n\n  #custom-hamburger{\n    background-color:magenta;\n    border-radius: 2px;\n    width:30px;\n    height:24px;\n    margin-bottom: 15px;\n    margin-top: 4px;\n    align-content: center;\n  }\n  \n\n  /********navbar icon hamburger https://stackoverflow.com/questions/49064813/vue-js-toggle-hamburger-menu-icons******/\n\n.top-icon {  \n    display: inline-block;\n    border-radius: 500px;\n    margin: 0px;\n    position: relative;\n    padding: 80px;\n    cursor: pointer;\n  }\n  \n  .main-item {\n    width: 80px;\n    height: 80px;\n    position: relative;\n  }\n  \n  .footer-items {\n    width: 80px;\n    height: 80px;\n    position: relative;\n  }\n  \n  .line {\n    position: absolute;\n    height: 4px;\n    width: 30%;\n    background: magenta;\n    border-radius: 10px;\n    transition: all cubic-bezier(0.25, 0.1, 0.28, 1.54) 0.32s;\n  }\n  \n  .line01 {\n    top: -10%;\n  }\n  \n  .line02 {\n    top: -5%;\n  }\n  \n  .line03 {\n    top: 0%;\n  }\n  \n  .menu.close .line01 {\n    transform: rotate(45deg);\n    top: 49%;\n  }\n  \n  .menu.close .line02, .menu.close .line03 {\n    transform: rotate(-45deg);\n    top: 49%;\n  }\n\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -28571,13 +28574,7 @@ var render = function () {
   return _c(
     "div",
     { staticClass: "app" },
-    [
-      _c("TopNavbar"),
-      _vm._v(" "),
-      _c("MainBody"),
-      _vm._v(" "),
-      _c("router-view"),
-    ],
+    [_c("TopNavbar"), _vm._v(" "), _c("MainBody"), _vm._v(" "), _c("Footer")],
     1
   )
 }
@@ -45274,7 +45271,7 @@ module.exports = index_cjs;
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames not based on template
-/******/ 			if ({"resources_js_components_pages_Home_vue":1,"resources_js_components_pages_About_vue":1,"resources_js_components_pages_Orders_vue":1,"resources_js_components_pages_Messages_vue":1,"resources_js_components_navigations_TopNavbar_vue":1,"resources_js_components_MainBody_vue":1}[chunkId]) return "js/" + chunkId + ".js";
+/******/ 			if ({"resources_js_components_pages_Home_vue":1,"resources_js_components_pages_About_vue":1,"resources_js_components_pages_Orders_vue":1,"resources_js_components_pages_Messages_vue":1,"resources_js_components_navigations_TopNavbar_vue":1,"resources_js_components_MainBody_vue":1,"resources_js_components_navigations_Footer_vue":1}[chunkId]) return "js/" + chunkId + ".js";
 /******/ 			// return url for filenames based on template
 /******/ 			return undefined;
 /******/ 		};

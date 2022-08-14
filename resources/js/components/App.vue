@@ -2,7 +2,7 @@
     <div class="app">
         <TopNavbar></TopNavbar>  
         <MainBody></MainBody> 
-        <router-view></router-view>
+        <Footer></Footer> 
     </div>
 </template>
 <script>
@@ -13,7 +13,8 @@ export default {
     name: 'app',
     components: {
         TopNavbar: () => import('../components/navigations/TopNavbar'),
-        MainBody:() => import('../components/MainBody.vue')
+        MainBody:() => import('../components/MainBody.vue'),
+        Footer:() => import('../components/navigations/Footer.vue')
     }
 }
 </script>
