@@ -18,8 +18,8 @@ class="nav-content"
 > <!--  Menu content -->
 <div id="logo"><img :src="logo" width="360px" height="200px"/><p>Dakon production</p></div><!--  Here can be a logo -->
 <ul class="nav-items">
-<li><router-link to="/">Home</router-link> </li>
-<li><router-link to="/about">About</router-link></li>
+<li><router-link to="/">Accueil</router-link> </li>
+<li><router-link to="/about">Qui sommes nous</router-link></li>
 <li><router-link to="/order">Commandes</router-link></li>
 <li><router-link to="/message">Messages</router-link></li>
 </ul>

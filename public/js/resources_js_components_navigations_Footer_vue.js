@@ -203,7 +203,11 @@ var render = function () {
         _c("ul", { staticClass: "foot-items" }, [
           _c(
             "li",
-            [_c("router-link", { attrs: { to: "/about" } }, [_vm._v("About")])],
+            [
+              _c("router-link", { attrs: { to: "/about" } }, [
+                _vm._v("Contactez nous"),
+              ]),
+            ],
             1
           ),
           _vm._v(" "),
@@ -211,7 +215,7 @@ var render = function () {
             "li",
             [
               _c("router-link", { attrs: { to: "/order" } }, [
-                _vm._v("Feeback"),
+                _vm._v("Vos opinions"),
               ]),
             ],
             1
@@ -221,7 +225,7 @@ var render = function () {
             "li",
             [
               _c("router-link", { attrs: { to: "/message" } }, [
-                _vm._v("Help"),
+                _vm._v("Aidez-moi"),
               ]),
             ],
             1

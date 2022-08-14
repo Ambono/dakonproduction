@@ -267,7 +267,11 @@ var render = function () {
             _c("ul", { staticClass: "nav-items" }, [
               _c(
                 "li",
-                [_c("router-link", { attrs: { to: "/" } }, [_vm._v("Home")])],
+                [
+                  _c("router-link", { attrs: { to: "/" } }, [
+                    _vm._v("Accueil"),
+                  ]),
+                ],
                 1
               ),
               _vm._v(" "),
@@ -275,7 +279,7 @@ var render = function () {
                 "li",
                 [
                   _c("router-link", { attrs: { to: "/about" } }, [
-                    _vm._v("About"),
+                    _vm._v("Qui sommes nous"),
                   ]),
                 ],
                 1
