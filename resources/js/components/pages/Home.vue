@@ -1,7 +1,9 @@
 <template>
     <div  class="default-container"> 
         <h1>Vente de medicament de fievre typhoide</h1>
-    <div><h1>Qu'est ce que la fievre typhoide</h1></div>
+    <div><h1>Qu'est ce que la fievre typhoide</h1>
+    {{homeContent.Home.Thyphoid}}
+    </div>
     <div class="row">
   <div class="column left" style="background-color:#aaa;">
     <h2>Column 1</h2>
@@ -20,9 +22,15 @@
     </div>
 </template>
 <script>
-import {mapState} from 'vuex'
+import {mapState} from 'vuex';
+import {HomeContent} from '../../lang/Content'
 export default {
     name: 'home',
+    data() {
+            return {
+            homeContent: HomeContent.split("\n\n")
+            }
+          },   
     computed: {
       ...mapState({
          count: state => state.count

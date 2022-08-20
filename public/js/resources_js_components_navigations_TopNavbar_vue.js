@@ -46,7 +46,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'topnavbar',
@@ -235,19 +234,24 @@ var render = function () {
   return _c("div", [
     _c("div", { attrs: { id: "nav" } }, [
       _c("div", { staticClass: "nav-menu" }, [
-        _c("div", { attrs: { id: "custom-hamburger-container" } }, [
-          _c(
-            "i",
-            {
-              staticClass: "bi bi-arrow-down-square",
-              on: {
-                click: function ($event) {
-                  return _vm.showMenu()
-                },
+        _c(
+          "i",
+          {
+            attrs: { id: "custom-hamburger-container" },
+            on: {
+              click: function ($event) {
+                return _vm.showMenu()
               },
             },
-            [_vm._m(0)]
-          ),
+          },
+          [_vm._m(0)]
+        ),
+        _vm._v(" "),
+        _c("div", { attrs: { id: "logo" } }, [
+          _c("img", {
+            attrs: { src: _vm.logo, width: "360px", height: "200px" },
+          }),
+          _c("p", [_vm._v("Dakon production")]),
         ]),
         _vm._v(" "),
         _c(
@@ -257,13 +261,6 @@ var render = function () {
             class: this.showMobileMenu ? "open-menu" : "closed-menu",
           },
           [
-            _c("div", { attrs: { id: "logo" } }, [
-              _c("img", {
-                attrs: { src: _vm.logo, width: "360px", height: "200px" },
-              }),
-              _c("p", [_vm._v("Dakon production")]),
-            ]),
-            _vm._v(" "),
             _c("ul", { staticClass: "nav-items" }, [
               _c(
                 "li",
@@ -318,7 +315,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "top-icon" }, [
+    return _c("div", [
       _c("span", { staticClass: "line line01" }),
       _vm._v(" "),
       _c("span", { staticClass: "line line02" }),
