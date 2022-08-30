@@ -45271,7 +45271,7 @@ module.exports = index_cjs;
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames not based on template
-/******/ 			if ({"resources_js_components_pages_Home_vue":1,"resources_js_components_pages_About_vue":1,"resources_js_components_pages_Orders_vue":1,"resources_js_components_pages_Messages_vue":1,"resources_js_components_navigations_TopNavbar_vue":1,"resources_js_components_MainBody_vue":1,"resources_js_components_navigations_Footer_vue":1}[chunkId]) return "js/" + chunkId + ".js";
+/******/ 			if ({"resources_js_components_pages_Home_vue":1,"resources_js_components_pages_About_vue":1,"resources_js_components_pages_Orders_vue":1,"resources_js_components_pages_Messages_vue":1,"resources_js_components_navigations_TopNavbar_vue":1,"resources_js_components_MainBody_vue":1,"resources_js_components_navigations_Footer_vue":1,"resources_js_pageContent_TyphoidDescription_vue":1}[chunkId]) return "js/" + chunkId + ".js";
 /******/ 			// return url for filenames based on template
 /******/ 			return undefined;
 /******/ 		};

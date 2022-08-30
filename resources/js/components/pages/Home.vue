@@ -1,9 +1,9 @@
 <template>
     <div  class="default-container"> 
+<div></div>
         <h1>Vente de medicament de fievre typhoide</h1>
-    <div><h1>Qu'est ce que la fievre typhoide</h1>
-    {{homeContent.Home.Thyphoid}}
-    </div>
+     <TyphoidDescription></TyphoidDescription>  
+    
     <div class="row">
   <div class="column left" style="background-color:#aaa;">
     <h2>Column 1</h2>
@@ -23,14 +23,30 @@
 </template>
 <script>
 import {mapState} from 'vuex';
-import {HomeContent} from '../../lang/Content'
+//  import i18n from "@/i18n"
 export default {
+ 
     name: 'home',
-    data() {
-            return {
-            homeContent: HomeContent.split("\n\n")
-            }
-          },   
+    components:{
+        //HomeContent:() => import('../../pageContent/Content'),
+       TyphoidDescription:() => import('../../pageContent/TyphoidDescription'),
+    },
+    // props:{      
+    //   Typhoid: String,
+    // },
+    // data() {
+    //   return {            
+    //         Typhoid: "HomeContent.Typhoid",            
+    //     }
+    //   }, 
+       mounted() {
+            console.log(HomeContent)
+        },
+      methods: {
+    setLocale(locale) {
+      this.$i18n.locale = locale
+    }
+     },
     computed: {
       ...mapState({
          count: state => state.count
@@ -61,3 +77,4 @@ export default {
   clear: both;
 } 
 </style>
+
