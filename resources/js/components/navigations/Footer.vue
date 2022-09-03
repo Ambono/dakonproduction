@@ -16,7 +16,7 @@ class="foot-content"
 <script>
 
 export default{
-   name:'footer',
+   name:'footcomponent',
 data() {
 return {
 showMobileMenu: false,

@@ -41,36 +41,21 @@
 }
 
 /************ Hamburger menu **************************/
-#custom-hamburger-container{
-    width:10px;
-    height:10px;
-    align-content: center;
-    position: relative;
-       
-  }
 
 
-  #custom-hamburger{
+  /* #custom-hamburger{
     background-color:magenta;
     border-radius: 2px;
     width:30px;
     height:24px;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     margin-top: 4px;
     align-content: center;
   }
-  
+   */
 
   /********navbar icon hamburger https://stackoverflow.com/questions/49064813/vue-js-toggle-hamburger-menu-icons******/
 
-.top-icon {  
-    display: inline-block;
-    border-radius: 500px;
-    margin: 0px;
-    position: relative;
-    padding: 80px;
-    cursor: pointer;
-  }
   
   .main-item {
     width: 80px;
@@ -84,25 +69,41 @@
     position: relative;
   }
   
+  .i-hamburger-menu{
+    width:50px;
+    height:45px;
+  }
+  #custom-hamburger-container{
+    width:50px;
+    height:45px;
+    align-content: center;
+    position: relative;
+    margin-bottom: 10px;
+    margin-left:50px; 
+    background-color: goldenrod;
+    border-radius: 5px;  
+  }
+
   .line {
     position: absolute;
     height: 4px;
-    width: 30%;
-    background: magenta;
+    width: 80%;
+    background: white;
     border-radius: 10px;
+    margin-left: -35px;
     transition: all cubic-bezier(0.25, 0.1, 0.28, 1.54) 0.32s;
   }
   
   .line01 {
-    top: -10%;
+    top: 20%;
   }
   
   .line02 {
-    top: -5%;
+    top: 45%;
   }
   
   .line03 {
-    top: 0%;
+    top: 70%;
   }
   
   .menu.close .line01 {
