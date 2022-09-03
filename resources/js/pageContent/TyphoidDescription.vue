@@ -1,22 +1,44 @@
 <template>
-<div class="typhoiddescription">
-    <h1>This is for thyphoid description</h1>
-<div><h1>Qu'est ce que la fievre typhoide</h1>
-   
-    <p>content 2: {{contentvariable}}</p>
+<div class="messages">
+    <h1>This is for thyphoid description</h1>   
+        <p> {{LesFaits}}</p>
+        <p>{{Parag1}}</p>
+        <p>{{Symptome}}</p>
+        <p>{{Parag2}}</p>
+        <p>{{Traitement}}</p>
+        <p>{{Parag3}}</p>
+        <p>{{RecommendationTitle}}</p>
+        <p>{{Recommendation}}</p>           
     </div>
-</div>
 </template>
 
 <script>
-import  { contentvariable, MamanDakonwork, Posology, Disclaimer} from './Content'
+import  { LesFaits, Parag1, Symptome, Parag2, Traitement, Parag3, RecommendationTitle, Recommendation} from './Content.config';
+
+
+const Content = {
+     LesFaits : LesFaits,
+     Parag1 : Parag1, 
+     Symptome : Symptome,
+     Parag2 : Parag2,
+     Traitement : Traitement,
+     Parag3 : Parag3,
+     RecommendationTitle : RecommendationTitle,
+     Recommendation : Recommendation
+};
 export default{
     name:'typhoiddescription',
+
+
    data: () => ({ 
-    contentvariable:contentvariable, 
-    MamanDakonwork:MamanDakonwork,
-     Posology:Posology, 
-     Disclaimer:Disclaimer,
+    LesFaits : LesFaits,
+    Parag1 : Parag1, 
+    Symptome : Symptome,
+    Parag2 : Parag2,
+    Traitement : Traitement,
+    Parag3 : Parag3,
+    RecommendationTitle : RecommendationTitle,
+    Recommendation : Recommendation
      }),
  mounted() {
            
@@ -26,9 +48,11 @@ export default{
     created(){
        
     },
-    methods:{
-      
-    }
+//     methods:{
+//           function GetContentForTyphoideDescription(user) {
+//   return user.firstName + ' ' + user.lastName;
+//          }
+//     }
 }
 </script>
 

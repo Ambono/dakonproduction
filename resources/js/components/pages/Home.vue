@@ -24,8 +24,7 @@
 <script>
 import {mapState} from 'vuex';
 //  import i18n from "@/i18n"
-export default {
- 
+export default { 
     name: 'home',
     components:{
         //HomeContent:() => import('../../pageContent/Content'),
@@ -36,17 +35,15 @@ export default {
     // },
     // data() {
     //   return {            
-    //         Typhoid: "HomeContent.Typhoid",            
+    //         TyphoidDescription: TyphoidDescription,            
     //     }
     //   }, 
-       mounted() {
-            console.log(HomeContent)
-        },
-      methods: {
-    setLocale(locale) {
-      this.$i18n.locale = locale
-    }
-     },
+    //    mounted() {
+    //        // console.log(HomeContent)
+    //     },
+    //   methods: {
+   
+    //  },
     computed: {
       ...mapState({
          count: state => state.count

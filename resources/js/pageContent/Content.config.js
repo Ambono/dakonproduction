@@ -1,5 +1,5 @@
-const contentvariable =   
-            "Principaux faits \r\n" 
+const LesFaits = "Principaux faits \r\n" ;
+const Parag1 =           
 +  "\r\n" + "La fièvre typhoïde est une infection potentiellement mortelle due à la bactérie Salmonella typhi. Elle se propage habituellement par l’eau ou les aliments contaminés." 
 + "\n" +  "On estime que, chaque année, de 11 à 20 millions de personnes contractent cette maladie et que de 128 000 à 161 000 en meurent."
 +"Les symptômes sont les suivants: fièvre prolongée, fatigue, céphalées, nausées, douleurs abdominales, constipation ou diarrhée. Certains patients peuvent présenter une éruption cutanée. Dans les cas sévères, elle peut entraîner des complications sérieuses, voire la mort."
@@ -7,10 +7,10 @@ const contentvariable =
 +"On a utilisé pendant de nombreuses années 2 vaccins préventifs. Un nouveau vaccin conjugué, conférant une immunité de plus longue durée, a été préqualifé par l’OMS en décembre 2017."
 +"La fièvre typhoïde est une infection potentiellement mortelle due à la bactérie Salmonella typhi. Elle se propage en général par l’eau ou les aliments contaminés. Une fois la bactérie ingérée, elle se multiplie et passe dans la circulation sanguine."
 
-+"L’urbanisation et les changements climatiques risquent potentiellement d’accroître la charge mondiale de morbidité due à la typhoïde. De plus, l’augmentation de la résistance aux antibiotiques facilite la propagation de la typhoïde au sein des villes surpeuplées ou lorsque les systèmes d’adduction d’eau et d’assainissement sont insuffisants ou inondés."
++"L’urbanisation et les changements climatiques risquent potentiellement d’accroître la charge mondiale de morbidité due à la typhoïde. De plus, l’augmentation de la résistance aux antibiotiques facilite la propagation de la typhoïde au sein des villes surpeuplées ou lorsque les systèmes d’adduction d’eau et d’assainissement sont insuffisants ou inondés.";
 
-+"Symptômes"
-+"Salmonella typhi ne vit que chez l’être humain. Les personnes atteintes sont porteuses de la bactérie dans leur circulation sanguine et dans le tube digestif. Les symptômes sont les suivants : fièvre prolongée, fatigue, céphalées, nausées, douleurs abdominales, constipation ou diarrhée. Certains patients peuvent présenter une éruption cutanée. Dans les cas sévères, elle peut entraîner des complications sérieuses, voire la mort. On peut confirmer la fièvre typhoïde par des tests sanguins."
+const Symptome = "Symptômes"
+const Parag2 = "Salmonella typhi ne vit que chez l’être humain. Les personnes atteintes sont porteuses de la bactérie dans leur circulation sanguine et dans le tube digestif. Les symptômes sont les suivants : fièvre prolongée, fatigue, céphalées, nausées, douleurs abdominales, constipation ou diarrhée. Certains patients peuvent présenter une éruption cutanée. Dans les cas sévères, elle peut entraîner des complications sérieuses, voire la mort. On peut confirmer la fièvre typhoïde par des tests sanguins.";
 
 +"Épidémiologie, facteurs de risque et charge de morbidité"
 +"L’amélioration des conditions de vie et l’introduction des antibiotiques ont entraîné dans les pays industrialisés une baisse drastique de la morbidité et de la mortalité imputables à la typhoïde. Dans les régions en développement de l’Afrique, des Amériques, de l’Asie du Sud Est et du Pacifique occidental cependant, la maladie demeure un problème de santé publique."
@@ -19,8 +19,8 @@ const contentvariable =
 
 +"Le risque est plus élevé dans les populations n’ayant pas accès à l’eau potable et à des services d’assainissement suffisants. Les communautés pauvres et les groupes vulnérables, dont les enfants, sont les plus exposés au risque."
 
-+"Traitement"+
-+"On peut traiter la fièvre typhoïde au moyen d’antibiotiques. Avec l’émergence de la résistance à ces médicaments, y compris aux fluoroquinolones, de nouveaux antibiotiques, comme les céphalosporines et l’azithromycine, sont utilisés dans les régions touchées. Il y a eu des notifications sporadiques de résistance à l’azithromycine, mais celle-ci n’est pas encore courante."
+const Traitement = "Traitement"
+const Parag3 = "On peut traiter la fièvre typhoïde au moyen d’antibiotiques. Avec l’émergence de la résistance à ces médicaments, y compris aux fluoroquinolones, de nouveaux antibiotiques, comme les céphalosporines et l’azithromycine, sont utilisés dans les régions touchées. Il y a eu des notifications sporadiques de résistance à l’azithromycine, mais celle-ci n’est pas encore courante."
 
 +"Même après la disparition des symptômes, on peut rester porteur de la bactérie, ce qui signifie que les sujets concernés peuvent encore la propager par les selles."
 
@@ -40,26 +40,22 @@ const contentvariable =
 
 +"Un nouveau vaccin conjugué, conférant une immunité plus longue, a été préqualifié par l’OMS en décembre 2017 pour les enfants à partir de l’âge de 6 mois."
 
-+"Tous les voyageurs dans des régions d’endémie de la fièvre typhoïde sont potentiellement exposés au risque même si, en général, celui-ci est faible dans les centres touristiques et d’affaires où les normes d’hébergement, d’assainissement et d’hygiène alimentaire sont élevées. La vaccination antityphoïdique sera proposée aux voyageurs se rendant dans des destinations où le risque est élevé."
-
-+"Les recommandations qui suivent aident à garantir la sécurité des voyageurs:"
++"Tous les voyageurs dans des régions d’endémie de la fièvre typhoïde sont potentiellement exposés au risque même si, en général, celui-ci est faible dans les centres touristiques et d’affaires où les normes d’hébergement, d’assainissement et d’hygiène alimentaire sont élevées. La vaccination antityphoïdique sera proposée aux voyageurs se rendant dans des destinations où le risque est élevé.";
+const RecommendationTitle ="Recommendation";
+const Recommendation ="Les recommandations qui suivent aident à garantir la sécurité des voyageurs:";
 
 +"veiller à ce que la nourriture soit suffisamment cuite et encore chaude quand elle est servie;"
 +"éviter le lait cru et les produits qui en dérivent. Ne boire que du lait pasteurisé ou bouilli;"
 +"éviter la glace sauf si elle est préparée à partir d’une eau saine;"
 +"en cas de doute sur la sécurité sanitaire de l’eau, la faire bouillir ou, si ce n’est pas possible, la désinfecter avec un agent désinfectant fiable à libération lente (qu’on trouve en général dans les pharmacies);"
 +"se laver soigneusement et fréquemment les mains avec du savon, en particulier après avoir touché des animaux de compagnie ou de ferme ou après avoir été aux toilettes;"
-+"laver soigneusement les fruits et les légumes, en particulier s’ils sont consommés crus. Si possible, ils doivent être pelés."
-      "Source: OMS (https://www.who.int/fr/news-room/fact-sheets/detail/typhoid) "
++"laver soigneusement les fruits et les légumes, en particulier s’ils sont consommés crus. Si possible, ils doivent être pelés.";
+ const Source =     "Source: OMS (https://www.who.int/fr/news-room/fact-sheets/detail/typhoid) ";
 
- const   MamanDakonwork=""
-
+ const   MamanDakonwork="";
         
- const  Posology=""
-
+ const  Posology="";
         
- const  Disclaimer=""
+ const  Disclaimer=""  ;
 
-  
-
-export  { contentvariable, MamanDakonwork, Posology, Disclaimer}
+export  { LesFaits, Parag1, Symptome, Parag2, Traitement, Parag3, RecommendationTitle, Recommendation, Source, MamanDakonwork, Posology, Disclaimer}

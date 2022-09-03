@@ -32,7 +32,7 @@ class="nav-content"
 </template>
 
 <script>
-import logo from "../../../images/logo/dp_logo.png";
+import logo from "../../../images/logo/logo2.png";
 export default{
    name:'topnavbar',
  
@@ -77,7 +77,7 @@ display: none;
 }
 
 #logo {
-   background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
+   background: linear-gradient(to top, aqua, transparent);
    position: relative;
    top: 0;
    left: 0;
