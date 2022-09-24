@@ -2,21 +2,20 @@
 <div> 
   <div id="nav">
 <div class="nav-menu"> <!-- Menu container -->
-<div id ="custom-hamburger-container">
-<i class="bi bi-arrow-down-square" @click="showMenu()">   
-  <div class="top-icon">   
+<i id ="custom-hamburger-container" @click="showMenu()">   
+  <div>   
       <span class="line line01"></span>
       <span class="line line02"></span>
-      <span class="line line03"></span>   
+      <span class="line line03"></span>      
   </div>
 </i> <!-- Hamburger icon with click method -->
-</div>
 
+<div id="logo"><img :src="logo" width="360px" height="200px"/><p>Dakon production</p></div>
 <div
 class="nav-content"
 :class="this.showMobileMenu ? 'open-menu' : 'closed-menu'"
 > <!--  Menu content -->
-<div id="logo"><img :src="logo" width="360px" height="200px"/><p>Dakon production</p></div><!--  Here can be a logo -->
+<!-- <div id="logo"><img :src="logo" width="360px" height="200px"/><p>Dakon production</p></div> Here can be a logo -->
 <ul class="nav-items">
 <li><router-link to="/">Accueil</router-link> </li>
 <li><router-link to="/about">Qui sommes nous</router-link></li>
@@ -33,7 +32,7 @@ class="nav-content"
 </template>
 
 <script>
-import logo from "../../../images/logo/dp_logo.png";
+import logo from "../../../images/logo/logo2.png";
 export default{
    name:'topnavbar',
  
@@ -78,7 +77,7 @@ display: none;
 }
 
 #logo {
-   background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
+   background: linear-gradient(to top, aqua, transparent);
    position: relative;
    top: 0;
    left: 0;
